@@ -14,7 +14,7 @@
             "email": "oterolopez1990@gmail.com"
         }
     ],
-      "minimum-stability": "dev",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.0"
     },

@@ -6,8 +6,8 @@
 */
 
 class CoinPaymentsAPI {
-	private $private_key = '4c1476fb84083fa53a537e2f0839778a027f5a1433dfc896d8b1e2f15b7ccae6';
-	private $public_key = 'bc7dC861d45dF90e315Ec3D8C07b9d0A8b33a2d202734947bBdcB4ED895dD812';
+	private $private_key = '';
+	private $public_key = '';
 	private $ch = null;
 	
 	public function Setup($private_key, $public_key) {

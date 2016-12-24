@@ -1,4 +1,5 @@
 <?php
+namespace oteroweb\LaravelCoinPayment;
 /*
 	CoinPayments.net API Class - v1.0
 	Copyright 2014-2016 CoinPayments.net. All rights reserved.	

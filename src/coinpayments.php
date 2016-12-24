@@ -3,8 +3,8 @@ namespace oteroweb\LaravelCoinPayment;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
+		require('coinpayments.inc.php');
 
-	require('./coinpayments.inc.php');
 /**
  * Class CoinPayment
  */
@@ -22,6 +22,7 @@ class CoinPayment {
 	
     public function __construct()
 	{
+	
 		$this->private_key = config('bitcoinpayment.private_key');
 		$this->public_key = config('bitcoinpayment.public_key');
     }

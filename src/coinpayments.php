@@ -213,34 +213,32 @@ class CoinPayment {
 		$string = '';
 		return strtoupper(md5($string));
 	}
-		
-	
 
 	// public function generateTransactionWithRedirect(Request $request)  {
 	public function generateTransactionWithRedirect()  {
 
-
-		$cps = new CoinPaymentsAPI();
-		$cps->Setup($this->private_key, $this->public_key);
-
-		$req = array(
-			'amount' => 1,
-			'currency1' => 'USD',
-			'currency2' => 'BTC',
-			'address' => '', // send to address in the Coin Acceptance Settings page
-			'item_name' => 'Test Item/Order Description',
-			'ipn_url' => 'https://yourserver.com/ipn_handler.php',
-			'buyer_email' => 'oterolopez1990gmail.com'
-		);
-		// See https://www.coinpayments.net/apidoc-create-transaction for all of the available fields
-				
-		$result = $cps->CreateTransaction($req);
-		if ($result['error'] == 'ok') {
-			$le = php_sapi_name() == 'cli' ? "\n" : '<br />';
-			print 'Transaction created with ID: '.$result['result']['txn_id'].$le;
-			print 'Buyer should send '.sprintf('%.08f', $result['result']['amount']).' BTC'.$le;
-			print 'Status URL: '.$result['result']['status_url'].$le;
-		} else {
-			print 'Error: '.$result['error']."\n";
+			$cps = new CoinPaymentsAPI();
+			$cps->Setup($this->private_key, $this->public_key);
+			$req = array(
+				'amount' => 1,
+				'currency1' => 'USD',
+				'currency2' => 'BTC',
+				'address' => '', // send to address in the Coin Acceptance Settings page
+				'item_name' => 'Test Item/Order Description',
+				'ipn_url' => 'https://yourserver.com/ipn_handler.php',
+				'buyer_email' => 'oterolopez1990gmail.com'
+			);
+			// See https://www.coinpayments.net/apidoc-create-transaction for all of the available fields
+					
+			$result = $cps->CreateTransaction($req);
+			if ($result['error'] == 'ok') {
+				$le = php_sapi_name() == 'cli' ? "\n" : '<br />';
+				print 'Transaction created with ID: '.$result['result']['txn_id'].$le;
+				print 'Buyer should send '.sprintf('%.08f', $result['result']['amount']).' BTC'.$le;
+				print 'Status URL: '.$result['result']['status_url'].$le;
+			} else {
+				print 'Error: '.$result['error']."\n";
+			}
 		}
+
 }

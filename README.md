@@ -10,7 +10,8 @@ A Library For Checkout with bitcoin in laravel Framework
 Via Composer
 
 ``` bash
-$ composer require "oteroweb/laravelcoinpayment": "dev-master"
+$  composer require oteroweb/laravelcoinpayment "dev-master"
+
 ```
 or add to your composer json´in require array
 

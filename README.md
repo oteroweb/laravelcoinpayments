@@ -101,12 +101,12 @@ If you discover any security related issues, please email oterolopez1990@gmail.c
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 
-[ico-version]: https://img.shields.io/packagist/v/charlesassets/laravel-perfectmoney.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/oteroweb/laravelcoinpayment.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/charlesassets/laravel-perfectmoney.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/oteroweb/laravelcoinpayment.svg?style=flat-square
 
 
-[link-packagist]: https://packagist.org/packages/oteroweb/laravel-perfectmoney
-[link-downloads]: https://packagist.org/packages/oteroweb/laravel-perfectmoney
+[link-packagist]: https://packagist.org/packages/oteroweb/laravelcoinpayment
+[link-downloads]: https://packagist.org/packages/oteroweb/laravelcoinpayment
 [link-author]: https://github.com/oteroweb
 [link-contributors]: ../../contributors

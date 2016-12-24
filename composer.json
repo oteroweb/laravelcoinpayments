@@ -15,7 +15,9 @@
     },
     "autoload": {
       "psr-4": {
-            "HelloWorld\\": "src"
+            "HelloWorld\\": "src",
+            "oteroweb\\LaravelCoinPayment\\": "src"
+
         }
     }
 }

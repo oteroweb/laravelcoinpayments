@@ -20,7 +20,7 @@ class LaravelCoinPaymentServiceProvider extends ServiceProvider
 		// Views
 		$this->loadViewsFrom(__DIR__.'/../src/views', 'laravelcoinpayment');
 		
-		// $this->publishes([
+		$this->publishes([
 			__DIR__.'/../src/views' => resource_path('views/vendor/laravelcoinpayment'),
 		], 'views');
     }

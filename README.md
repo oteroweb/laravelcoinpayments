@@ -22,13 +22,13 @@ or add to your composer json´in require array
 Add Provider
 
 ``` php
-oteroweb\LaravelCoinpayment\LaravelCoinpaymentServiceProvider::class,
+oteroweb\LaravelCoinpayment\LaravelCoinPaymentServiceProvider::class,
 ```
 
 Add Aliases
 
 ``` php
-'Coinpayment' => oteroweb\LaravelCoinpayment\CoinPaymentsAPI::class,
+'Coinpayment' => oteroweb\LaravelCoinPayment\CoinPaymentsAPI::class,
 ```
 
 ##Configuration
@@ -53,7 +53,9 @@ If you want to customize form, follow these steps.
 
 ### 1.Publish view
 ```
-php artisan vendor:publish --provider="oteroweb\LaravelCoinpayment\LaravelCoinpaymentServiceProvider" --tag="views"
+php artisan vendor:publish 
+
+--provider="oteroweb\LaravelCoinpayment\LaravelCoinpaymentServiceProvider" --tag="views"
 ```
 ### 2.Edit your view at /resources/views/vendor/coinpayment/coinpayment.php
 

@@ -106,7 +106,8 @@ class CoinPayment {
 				'address' => '', // send to address in the Coin Acceptance Settings page
 				'item_name' => 'Test Item/Order Description',
 				'ipn_url' => 'https://yourserver.com/ipn_handler.php',
-				'buyer_email' => Auth::user()->email
+				'buyer_email' => Auth::user()->email,
+				'buyer_name' => Auth::user()->name
 			);
 			// See https://www.coinpayments.net/apidoc-create-transaction for all of the available fields
 			$result = $cps->CreateTransaction($req);
